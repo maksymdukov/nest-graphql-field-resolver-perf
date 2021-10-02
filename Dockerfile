@@ -8,6 +8,8 @@ RUN npm ci
 
 COPY . .
 
+RUN chmod +x load-test.sh
+
 RUN npm run build
 
 CMD npm run start:prod:with_field_resolvers && npm run start:prod:without_field_resolvers
