@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ProductVariantImage {
+  id: String!
+  imageKey: String!
+  imageUrl: String
+  imageUrl2: String
+  imageUrl3: String
+}
+
+type ProductVariant {
+  id: String!
+  images: [ProductVariantImage!]!
+}
+
+type Product {
+  id: String!
+  name: String!
+  variants: [ProductVariant!]!
+}
+
+type Query {
+  getProducts: [Product!]!
+}
